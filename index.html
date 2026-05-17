@@ -51,9 +51,9 @@
                     <label class="block text-sm font-medium text-gray-700 mb-1">التخصص</label>
                     <select id="std-login-major" class="w-full border border-gray-300 rounded px-3 py-2 text-right focus:outline-none focus:ring-2 focus:ring-gtcTeal">
                         <option value="">-- اختر التخصص --</option>
-                        <option value="هندسة البرمجيات">هندسة البرمجيات</option>
+                        <option value="سكرتيريات تنفيذية">سكرتيريات تنفيذية</option>
                         <option value="إدارة الموارد البشرية">إدارة الموارد البشرية</option>
-                        <option value="تكنولوجيا المعلومات">تكنولوجيا المعلومات</option>
+                        <option value="تجارة وإدارة مكاتب">تجارة وإدارة مكاتب</option>
                         <option value="الوسائط المتعددة">الوسائط المتعددة</option>
                     </select>
                 </div>
@@ -61,10 +61,8 @@
                     <label class="block text-sm font-medium text-gray-700 mb-1">الشعبة</label>
                     <select id="std-login-section" class="w-full border border-gray-300 rounded px-3 py-2 text-right focus:outline-none focus:ring-2 focus:ring-gtcTeal">
                         <option value="">-- اختر الشعبة --</option>
-                        <option value="ES2A">ES2A</option>
-                        <option value="101">101</option>
-                        <option value="102">102</option>
-                        <option value="103">103</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
                     </select>
                 </div>
                 <button onclick="loginStudent()" class="w-full bg-gtcDark hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition">دخول البوابة</button>
@@ -175,18 +173,14 @@
                             
                             <select id="std-major" class="border p-2 rounded">
                                 <option value="">-- اختر التخصص --</option>
-                                <option value="هندسة البرمجيات">هندسة البرمجيات</option>
-                                <option value="إدارة الموارد البشرية">إدارة الموارد البشرية</option>
-                                <option value="تكنولوجيا المعلومات">تكنولوجيا المعلومات</option>
-                                <option value="الوسائط المتعددة">الوسائط المتعددة</option>
+                                <option value="سكرتيريات تنفيذية">سكرتيريات تنفيذية</option>
+                                <option value="تجارة وإدارة مكاتب">تجارة وإدارة مكاتب</option>
                             </select>
 
                             <select id="std-section" class="border p-2 rounded">
                                 <option value="">-- اختر الشعبة --</option>
-                                <option value="ES2A">ES2A</option>
-                                <option value="101">101</option>
-                                <option value="102">102</option>
-                                <option value="103">103</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
                             </select>
                         </div>
                         <button onclick="saveStudent()" class="bg-gtcTeal text-white px-4 py-2 rounded hover:bg-teal-700">حفظ الطالب</button>
@@ -274,7 +268,7 @@
                                 </div>
                                 <div>
                                     <label class="block text-xs mb-1">اسم الكويز / التقييم:</label>
-                                    <input type="text" id="quiz-title" placeholder="مثال: الكويز الأول (ES2A)" class="border p-2 rounded w-full">
+                                    <input type="text" id="quiz-title" placeholder="مثال: الكويز الأول (A)" class="border p-2 rounded w-full">
                                 </div>
                                 <div>
                                     <label class="block text-xs mb-1">تاريخ الكويز:</label>
@@ -334,8 +328,8 @@
                 {
                     national_id: "123456789",
                     name: "أحمد محمد علي",
-                    major: "هندسة البرمجيات",
-                    section: "ES2A",
+                    major: "سكرتيريات تنفيذية",
+                    section: "A",
                     courses: [
                         {
                             course_name: "برمجة تطبيقات الويب",
